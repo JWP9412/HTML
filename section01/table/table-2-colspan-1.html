@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+    <style>
+        table, th, td {
+            border:1px solid red;
+        }
+        td{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table 태그</h2>
+    <hr>
+    <p>테이블이 컬럼 합치기(<b>colspan</b>)</p>
+    <h3>기본 형태</h3>
+    <table>
+       
+        <tr>
+            <th>이름</th>
+            <td>Kim</td>
+            <th>연락처</th>
+            <td>010-1234-5678</td>
+            
+        </tr>
+
+        <tr>
+            <th>주소</th>
+            <td colspan="3">Seoul</td>
+        </tr>
+        <tr> 
+            <th>자기소개서</th>
+            <td colspan="3">hi</td>    
+        </tr>
+    </table>
+</body>
+</html>
