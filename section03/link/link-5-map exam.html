@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Tag</title>
+</head>
+<body>
+    <h2>Map Tag</h2>
+    <hr>
+    <p>맵 태그는 하나의 이미지에 여러 개의 링크를 걸 수 있다. <br>
+        이미지상에 클릭 위치에 따라서 서로 다른 링크가 열리도록 한다.
+    </p>
+    <hr>
+    <img src="img/korea.png" usemap="#mapimage" id="map">
+    <map name="mapimage">
+        <a href="#seoul">
+        <area shape="poly" coords="197,132,207,132,215,141,208,149,196,152,191,150,184,142,191,137" 
+        href="https://www.seoul.go.kr/main/index.jsp" 
+        target="_blank"></a>
+
+        <area shape="poly" coords="195,202,214,200,223,204,231,200,236,192,247,190,250,183,257,180,261,165,261,150,265,141,245,132,240,114,248,108,247,102,239,96,236,86,227,90,224,83,217,82,213,86,205,82,200,77,197,86,191,89,183,102,176,119,175,130,169,124,179,162,175,171,177,180,189,180,185,185,186,188,189,190,191,194,189,190" 
+        href="https://www.gg.go.kr/" 
+        target="_blank">
+        
+
+        <area shape="poly" coords="177,542,152,548,133,555,130,564,138,571,151,571,168,571,185,564,193,552,189,544" 
+       
+        href="#jeju"
+        target="_self">
+
+        <area shape="poly" coords="307,41,328,86,360,127,386,176,375,192,353,190,343,185,338,194,303,182,286,178,279,172,275,176,275,182,261,182,269,144,245,128,244,116,253,105,237,83,213,84,204,72,257,66,289,66,299,60,294,70" 
+        href="https://www.provin.gangwon.kr/covid-19.html"
+        href="#jeju"
+        target="_blank"> <a href="#jeju"></a>
+    </map>
+    <hr>
+    <h3 id="seoul">서울</h3>
+    <p>수도</p>
+    <p><a href="#map">지도 보기</a></p>
+    <hr>
+
+    <h3 id="kyueng">경기도</h3>
+    <p>수도권</p>
+    <p><a href="#map">지도 보기</a></p>
+    <hr>
+
+    <h3 id="gang">강원도</h3>
+    <p>니 감자는 묵어 봤나?</p>
+    <p><a href="#map">지도 보기</a></p>
+    <hr>
+
+    <h3 id="jeju">제주도</h3>
+    <p>감귤국 <a href="https://www.jeju.go.kr/corona19.jsp" target="_blank">귤먹으러 가기</a>
+        </p>
+    <p><a href="#map">지도 보기</a></p>
+</body>
+</html>

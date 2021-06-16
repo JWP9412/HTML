@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        table, th, td {
+            border:1px solid rgb(104, 200, 238);
+        }
+        td{
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>웹에서 지원하는 이미지 형식</h3>
+    <hr>
+    <table>
+        <caption>웹에서 지원하는 이미지 형식은 다음과 같다</caption>
+        <tr>
+            <th>파일 형식</th>
+            <th>설명</th>
+        </tr>
+        
+        <tr>
+            <td>GIF <br>
+                (Grahpic Interchange Form)</td>
+            <td>색상은 256컬러로서 이미지 파일 크기가 작아서
+                아이콘이나 불릿 등 작은 이미지에 주로 사용한다.
+                움직이는 이미지를 만들 수 있는 장점이 있다.
+            </td>
+        </tr>
+
+        <tr>
+            <td>JPG,JPEG <br>
+                (Joint Photographic Experts Group)</td>
+            <td>1677만 7216색과 256색 그레이로 저장 할 수 있다.
+                JPEG 표준은 이미지가 어떻게 연속된 바이트로 바뀌는지만을 규정한다.  </td>
+        </tr>
+
+        <tr>
+            <td>PNG <br>(Portable Network Graphics)</td>
+            <td> 비손실 그래픽 파일 포맷의 하나이다.
+                특허 문제가 얽힌 GIF 포맷의 문제를 해결하고 개선하기 위해서 고안되었다.
+                PNG 포맷은 컬러 팔레트 화상과 그레이스케일 화상, 
+                그리고 풀 컬러 화상 방식을 모두 지원한다. 
+                그러나 인터넷 상의 이미지 표시를 염두에 두고 개발되었기 때문에 
+                CMYK 등의 색 공간은 지원하지 않는다.
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h3>인물사진</h3>
+    <img src="images/people.jpg" alt="JPG인물사진">
+    <img src="images/gif.gif" alt="GIF인물사진">
+    <img src="images/png.png" alt="PNG인물사진">
+    
+</body>
+</html>
