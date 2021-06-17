@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag - radio</title>
+</head>
+<body>
+    <h2>Input Tag - 타입(radio)</h2>
+    <p>입력 태그의 타입(radio)은 선택항목 다지일선 <br>
+        - 관련된 속성(checked)는 선택 유무를 표시한다. <br>
+        - 속성(name)을 동일한 이름으로 지정하면 하나의 그룹으로 인식
+    </p> 
+    <hr>
+    <form>
+        <fieldset>
+            <legend>수업 과목</legend>
+            <p>원하는 과목을 신청하세요</p>
+            <label for="1"><input type="radio" checked name="subject" value="java" id="1">자바</label>
+            <label for="2"><input type="radio" name="subject" value="python" id="2">파이선</label>
+            <label for="3"><input type="radio" name="subject" value="C++" id="3">C++</label>
+
+        </fieldset>
+        </form>
+</body>
+</html>
