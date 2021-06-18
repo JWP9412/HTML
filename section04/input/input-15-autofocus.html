@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag - autofocus</title>
+</head>
+<body>
+    <h2>Input Tag - autofocus</h2>
+    <hr>
+    <p>입력 태그의 - 속성(autofocus)는 입력 커서 위치(캐럿: 타이핑시 깜박이는 것)를 지정한다. <br>
+    </p>
+    <ul>
+        <li>입력 타입이 text일때 autofocus를 받게 되면 캐럿이 위치하게 된다.</li>
+        <li>입력 타입이 버튼 계열이면 버튼이 활성화 된다.</li>
+        <li>여러 입력 태그에 autofocus를 지정하게 되면 가장 상단에 위치한 코드가 활성화 된다.</li>
+    </ul>
+    <hr>
+    <form>
+        <label for="">ID<input type="text" name="userid" value="guest" id=""></label> <br>
+        <label for="">NAME<input type="text" name="username" value="" id="" ></label> <br>
+        <label for="">ADR<input type="text" name="useradr" value="" id="" ></label> <br>
+        <label for="">Subject<input type="text" name="username" value="" id=""></label> <br>
+        <label for=""><input type="file" name="" id="" autofocus></label>
+        <input type="button" value="입력값 체크" autofocus> <br>
+        
+    </form>
+</body>
+</html>

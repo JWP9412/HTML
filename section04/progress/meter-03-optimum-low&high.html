@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter tag</title>
+</head>
+<body>
+    <h2>Meter 태그</h2>
+    <hr>
+    <p>Meter 태그는 값이 차지하는 크기를 표시한다. <br>
+    전체 크기 중에서 얼마나 차지하는지 표현할 때 사용한다. <br>
+    예) 하드 디스크 전체 용량중에서 사용량
+</p>
+    <ul>
+        <li>value   : 범위에서 차지하는 값</li>
+        <li>min     : 범위에서 최솟값, 디폴트 0</li>
+        <li>max     : 범위에서 최댓값, 디폴트 1 </li>
+        <li>low     : 범위에서 낮은값, 값이 작다는 의미</li>
+        <li>high    : 범위에서 놎은값, 값이 높다는 의미</li>
+        <li>optimum : 범위에서 적정값,</li>
+        <ul>
+            <li>optimum 값이 high 값보다 크면 value 값이 클수록 좋음</li>
+            <li>optimum 값이 low 값보다 작다면 value 값이 작을수록 좋음</li>
+        </ul>
+    </ul>
+    <hr>
+    <form action="">
+        <label for="">점유율(0.5) : </label> <br>
+        <meter value="0.5"></meter> <br>
+
+        <label for="">점유율(70%) : </label> <br>
+        <meter min="0" max="100" value="70"></meter> <br>
+
+        <label for="">적정량 : </label> <br>
+        <meter min="100" max="1000" low="300" high="800" value="299"></meter> <br>
+
+        
+        <label for="">적정선 : </label> <br>
+        <meter value="0.2" low="0.3" high="0.7" optimum="0.9"></meter> <br>
+        <label for="">적정선 : </label> <br>
+        <meter value="0.5" low="0.3" high="0.7" optimum="0.8"></meter> <br>
+        <label for="">적정선 : </label> <br>
+        <meter value="0.7" low="0.3" high="0.7" optimum="0.5"></meter> <br>
+
+        </form>
+        <p>컴퓨터 A의 디스크 사용량 : <meter min="0" low="200" max="1000" high="800" optimum="500" value="100">100GB</meter></p>
+        <p>컴퓨터 B의 디스크 사용량 : <meter min="0" low="200" max="1000" high="800" optimum="500" value="400">400GB</meter></p>
+        <p>컴퓨터 C의 디스크 사용량 : <meter min="0" low="200" max="1000" high="800" optimum="500" value="500">500GB</meter></p>
+        <p>컴퓨터 D의 디스크 사용량 : <meter min="0" low="200" max="1000" high="800" optimum="500" value="850">850GB</meter></p>
+            
+</body>
+</html>
