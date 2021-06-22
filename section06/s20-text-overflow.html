@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Overflow</title>
+    <style>
+        .content1{
+            border: 1px solid #ccc;
+            width: 200px;
+            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        .content2{
+            border: 1px solid #ccc;
+            width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <h2>Text OverFlow는 지정된 크기보다 텍스트가 클 경우 표시할 바법을 지정</h2>
+    <hr>
+    <p>text-overflow : clip | ellipsis</p>
+    <hr>
+    
+    <ul>
+        <li style="text-overflow: clip;">clip : 넘치는 텍스트를 자름 | 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야</li>
+        <li style="text-overflow: ellipsis;">ellipsis: 말 줄임표(...)로 표시 | 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야| 테스트를 위한 글입니다 복사 붙여넣기 할꺼야</li>
+        
+    </ul>
+    <section>
+        <p>text-overflow(none)</p>
+        <p class="content1">text-overflow(clip) : 가나다라마 바사아자 아자카차 고노도로모보소오조초코토포호 거너더러머버서어 hi where are you from? im from korean how are u? </p>
+        <p class="content2">text-overflow(ellipsis) :가나다라마 바사아자 아자카차 고노도로모보소오조초코토포호 거너더러머버서어 hi where are you from? im from korean how are u? </p>
+</section>
+</body>
+</html>
