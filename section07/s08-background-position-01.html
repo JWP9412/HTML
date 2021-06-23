@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Position</title>
+    <style>
+        div{
+            height: 400px;
+            width: 400px;
+            border: 3px dotted red;
+        
+        }
+        .bp1{
+            
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-image: url(img/cat.jpg);
+            background-position: 50px 50px;
+        }
+
+        .bp2{
+          
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-image: url(img/cat.jpg);
+            background-position: center center;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Background Position</h1>
+    <p>배경이미지 위치를 조절</p>
+    <hr>
+        <ul>
+            <li>수평위치 : left | center | right | 백분율 | 길이값</li>
+            <li>수직위치 : top | center | bottom | 백분율 | 길이값</li>
+        </ul>
+        <hr>
+        <div class="bp1">수평 50px 수직 50px</div>
+        <hr>
+        <div class="bp2" style="text-align: center;">수평 center 수직 center</div>
+</body>
+</html>

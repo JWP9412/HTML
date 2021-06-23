@@ -1,0 +1,41 @@
+[색상]
+
+1. 16진수 표기법
+    ㅁ. #RRGGBB
+        - 빛의 삼원색 순서
+        - RR,GG,BB(각 1Byte)
+    ㅁ. #000000 (검은색) ~ #ffffff (흰색)
+
+2. RGB, RGBA
+    - RGB (0~255,0~255,0~255)
+    - RGBA (0~255,0~255,0~255,0~1)
+        - A (Alpha) : 투명도
+          ㄴ 0이면 완전불투명, 1이면 완전 투명
+
+3. HSL, HSLA
+    EX) HSL (360, 100% 0%)
+        HSLA (270, 50%, 50%, 0.5)
+    - HSL (HUE, SATURATION, LIGHTNESS)
+        : HUE(색상) , SATURATION(채도), LIGHTNESS(밝기)
+        
+    - HSL (HUE, SATURATION, LIGHTNESS,ALPHA)
+        : HUE(색상) , SATURATION(채도), LIGHTNESS(밝기), ALPHA(투명도)
+    
+    - HSL,HSLA : 0~360도 가지 색상이 둥글게 배치
+        -> 0,360 : RED
+        -> 60 : YELLOW
+        -> 120 : GREEN
+        -> 180 : CYAN
+        -> 240 : BLUE
+        -> 300 : MAGENTA
+
+4. 색상 이름 표기법
+    - 웹 안전 색상(WEB-SAFE COLOR) : 16가지 색상을 포함해 모두 216가지
+    - 기본 16가지 웹 안전 색상
+        -> AQUA, BLACK, BLUE, FUCHSIA, 
+           GRAY, GREEN, LIME, MAROON, 
+           NAVY, PURPLE, RED, SILVER, 
+           TEAL, OLIVE, WHITE, YELLOW
+
+5. 색상 추출 사이트
+    https://www.webfx.com/web-design/color-picker/8E2A2A/
