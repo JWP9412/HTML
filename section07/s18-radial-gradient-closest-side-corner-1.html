@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial Gradient</title>
+    <style>
+        div{
+            height: 500px;
+            width: 300px;
+        }
+        
+        .radial-gradient{
+            background : radial-gradient(circle closest-side at 30% 40%,  white, blue, black);
+        }
+        .radial-gradient2{
+            background : radial-gradient(circle closest-corner at 30% 60%,  white, blue, black);
+        }
+    </style>
+</head>
+<body>
+    <h1>radial Gradient - 기본 타원형(circle)-크기(closest-side)</h1>
+    <p>그라데이션 가장 자리가 그라데이션 중심에서 
+        가장 가까운 요소의 코너에 만나는 지점</p>
+        <ul>
+            <li>원(circle) : 그라데이션의 가장자리가 그라데이션 중심에서 
+                가장 까가운 요소의 모서리와 만나는 지점</li>
+            <li>타원(ellipse) : 그라데이션 중심에서 가장 가까운 요소의 수평축이나
+                수직축에 만나는 지점</li>
+        </ul>
+    <hr>
+    <div class="radial-gradient"></div>
+    <hr>
+    <div class="radial-gradient2"></div>
+</body>
+</html>

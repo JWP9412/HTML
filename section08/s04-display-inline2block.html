@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Attribute</title>
+    <style>
+        div{
+            background-color: darkgray;
+            margin: 10px;
+        }
+        #inline img {
+            margin: 10px;
+        }
+        #block img {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>화면 배치 방법</h1>
+    <hr>
+    <p>블록 레벨과 인라인 레벨의 속성을 변경할 수 있다.</p>
+    <label for="">display : none | content | block | inline | inline-block | table | table-cell ...</label>
+    <hr>
+    
+    <div id="inline">
+        <img src="img/fresh.jpg" alt="">
+        <img src="img/paplica.jpg" alt="">
+        <img src="img/fresh.jpg" alt="">
+        <img src="img/fresh.jpg" alt="">
+    </div>
+
+    <div id="block">
+        <img src="img/fresh.jpg" alt="">
+        <img src="img/paplica.jpg" alt="">
+        <img src="img/fresh.jpg" alt="">
+        <img src="img/fresh.jpg" alt="">
+    </div>
+</body>
+</html>
