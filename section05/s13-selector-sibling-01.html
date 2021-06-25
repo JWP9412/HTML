@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibling Selector</title>
+    <style>
+        h1~ul {
+            /* 형제 선택자(~) */
+            border: 4px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>형제 선택자</h1>
+    <h2>형제 선택자는 부모에 속한 모든 형제 요소에 적용된다
+    </h2>
+    <hr>
+    <section id="container">
+        <h1>자바 개발자 과정</h1>
+        <ul>
+            <li>프로그래밍 언어</li>
+            <ul>
+                <li>자바</li>
+                <li>파이선</li>
+            </ul>
+            <li>DBMS</li>
+            <ul>
+                <li>오라클</li>
+                <li>mysql</li>
+            </ul>
+            <li>요구사항</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+    </ol>
+    
+    <hr>
+
+    <ul>
+        <li>프로그래밍 언어</li>
+        <ul>
+            <li>자바</li>
+            <li>파이선</li>
+        </ul>
+        <li>DBMS</li>
+        <ul>
+            <li>오라클</li>
+            <li>mysql</li>
+        </ul>
+        <li>요구사항</li>
+    </ul>
+</body>
+
+</html>

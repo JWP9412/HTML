@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Width</title>
+    <style>
+        li{
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border-top-width: thick;
+            border-left-width: medium;
+            border-right-width: medium ;
+            border-bottom-width: thin ;
+        }
+    </style>
+</head>
+<body>
+    <!--ridge : 산마루, 길쭉하게 솟은 부분 collapse:붕괴-->
+    <h1>Border Style 테두리 두께</h1>
+    <p>테두리 두께를 지정</p>
+    <hr>
+    <p>border-top-width : 크기 | thin | medium | thick</p>
+    <p>border-right-width : 크기 | thin | medium | thick</p>
+    <p>border-bottom-width : 크기 | thin | medium | thick</p>
+    <p>border-left-width : 크기 | thin | medium | thick</p>
+    <p>Border-Width :  크기 | thin | medium | thick</p> 
+    <hr>
+    <ul>
+        <li> <b> 두께 : thin < medium < thick</b></li>
+        <li> <b> 방향 : top -> right -> bottom -> left</b> </li>
+    </ul>
+    <hr>
+    <ul>
+        <li style="border-style: none;">none : 기본값, 테두리 없음</li>
+        <li style="border-style: hidden;">hidden : 테두리가 나타나지 않음,
+        border-collapse:collapse 일 경우 다른 테두리도 표시
+        </li>
+        <li style="border-style: dashed;">dashed : 짧은 점선</li>
+        <li style="border-style: dotted;">dotted : 점선</li>
+        <li style="border-style: double;">double : 이중선</li>
+        <li style="border-style: groove;">groove : 홈이 파인 창 테두리</li>
+        <li style="border-style: inset;">inset : 창 테두리 형태</li>
+        <li style="border-style: ridge;">ridge : 테 테두리 형태</li>
+        <li style="border-style: solid;">solid : 실선</li>
+    </ul>
+</body>
+</html>

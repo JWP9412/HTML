@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Selector</title>
+    <!-- Adjacent :인접한 가까운 -->
+    <style>
+        h1 + ul{ /* 인접 선택자(+) */
+            border: 4px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <h1>인접 선택자</h1>
+    <h2>인접 선택자는 형제 요소 가운데 첫 번째 요소에 적용된다.
+    </h2>
+    <hr>
+    <section id="container">
+        <h1>자바 개발자 과정</h1>
+        <ul>
+            <li>프로그래밍 언어</li>
+            <ul>
+                <li>자바</li>
+                <li>파이선</li>
+                </ul>
+            <li>DBMS</li>
+                <ul>
+                    <li>오라클</li>
+                    <li>mysql</li>
+                </ul>
+            <li>요구사항</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <ul>
+        <li>프로그래밍 언어</li>
+        <ul>
+            <li>자바</li>
+            <li>파이선</li>
+            </ul>
+        <li>DBMS</li>
+            <ul>
+                <li>오라클</li>
+                <li>mysql</li>
+            </ul>
+        <li>요구사항</li>
+    </ul>
+</body>
+</html>
